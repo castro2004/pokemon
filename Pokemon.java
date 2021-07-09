@@ -14,13 +14,9 @@ public class Pokemon {
         ataque = (int)(Math.random() * (19) + 5);  
     }
 
-    public String golpe(int golpeDirecto, int tipoPokemon){
-        // if(tipo == 2 && tipoPokemon == 1){
-        //     vida = vida - golpeDirecto;  
-        //     System.out.println("oh no! Doble ataque!");
-        // }
-        vida = vida - golpeDirecto;
-        return nombre + " recibio un golpe de " + golpeDirecto;
+    public String golpe(Pokemon atacante){
+        
+        return nombre + " recibio un golpe de " + atacante.getAtaque();
     }
 
     public int getAtaque(){

@@ -16,11 +16,11 @@ public class Batalla {
         int ataqueSquirtle = squirtle.getAtaque();
 
         System.out.println("Ataca " + squirtle.nombre + " con un ataque de " + ataqueSquirtle);
-        charmander.golpe(ataqueSquirtle, squirtle.tipo.getTipo());
+        charmander.golpe(squirtle);
         System.out.println(charmander.toString());
 
         System.out.println("Ataca " + charmander.nombre + " con un ataque de " + ataqueCharmander);
-        squirtle.golpe(ataqueCharmander, charmander.tipo.getTipo());
+        squirtle.golpe(charmander);
         System.out.println(squirtle.toString());
     }
 
