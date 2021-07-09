@@ -11,7 +11,7 @@ public class Batalla {
         System.out.println(charmander.toString());
         System.out.println(squirtle.toString());
 
-        int ataquePikachu = pikachu.getAtaque();
+        // int ataquePikachu = pikachu.getAtaque();
         int ataqueCharmander = charmander.getAtaque();
         int ataqueSquirtle = squirtle.getAtaque();
 
