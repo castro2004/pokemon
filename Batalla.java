@@ -1,16 +1,16 @@
 public class Batalla {
 
-    public static void main(String[] args){
-        System.out.println("Bienvenidos a la batalla pokemon!\n");
-        Pokemon pikachu = new Pokemon("pikachu", 4);
-        Pokemon Luxray = new Pokemon("Luxray", 4);
-        Pokemon Jolteon = new Pokemon("Jolteon ", 4);
-        Pokemon charmander = new Pokemon("Charmander", 2);
-        Pokemon Vulpix = new Pokemon("Vulpix", 2);
-        Pokemon squirtle = new Pokemon("Squirtle", 1);
-        Pokemon Totodile = new Pokemon("Totodile", 1);
-        Pokemon Pansage = new Pokemon("Pansage", 3);
-        Pokemon Pidgeot = new Pokemon("Pidgeot", 3);
+  public static void main(String[] args){
+      System.out.println("Bienvenidos a la batalla pokemon!\n");
+      P pikachu = new Pokemon("pikachu", 4);
+      P Luxray = new Pokemon("Luxray", 4);
+      P Jolteon = new Pokemon("Jolteon ", 4);
+      P charmander = new Pokemon("Charmander", 2);
+      P Vulpix = new Pokemon("Vulpix", 2);
+      P squirtle = new Pokemon("Squirtle", 1);
+      P Totodile = new Pokemon("Totodile", 1);
+      P Pansage = new Pokemon("Pansage", 3);
+      P Pidgeot = new Pokemon("Pidgeot", 3);
 
         System.out.println("Los combatientes el dia de hoy son: ");
         System.out.println(pikachu.toString());
@@ -42,5 +42,7 @@ public class Batalla {
         System.out.println(squirtle.toString());
 
     }
-
+    
+    
+  
 }
