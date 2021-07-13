@@ -1,7 +1,10 @@
 public class Batalla {
 
   public static void main(String[] args){
-    Scanner sn = new Scanner(System.in) {
+    System.out.print("Ingrese su nombre de usuario ");
+    Scanner sn = new Scanner(System.in);
+      String nombre = leer.nextLine();
+      System.out.print("Hola " + nombre + "tus pokemones son");  
       boolean salir = false;
       int opcion;
 
@@ -54,11 +57,9 @@ public class Batalla {
         System.out.println("Ataca " + charmander.nombre + " con un ataque de " + ataqueCharmander);
         squirtle.golpe(charmander);
         System.out.println(squirtle.toString());
+      
+        }
       }
-
-    }
-    
-    
-    
+    } 
   }
 }
