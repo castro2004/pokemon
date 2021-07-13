@@ -1,54 +1,30 @@
-import java.util.scanner;
 public class Batalla {
 
   public static void main(String[] args){
-      Sistem .out.println("Nombre jugador 1");
-      String nombre = leer.nextLine();
-      int seleccionar_opcion = 0;
-      int numero1 = 0;
-      int numero2 = 0;
-      int resultado = 0;
+    Scanner sn = new Scanner(System.in) {
+      boolean salir = false;
+      int opcion;
 
-      do{
+      while(salir) {
 
-        System.out.println("\n");
-        System.out.println("Seleccionar opcion: ");
-        System.out.println("Opcion 1");
-        System.out.println("Opcion 2");
-        System.out.println("Opcion 3");
-        seleccionar_opcion = leer.nextInt();
+        System.out.println("1. Inscribir a un maestro pokemon");
+        System.out.println("2. Administrar perfil del maestro pokemon");
+        System.out.println("3. Pelear");
+        System.out.println("4. Salir");
 
-        if(seleccionar_opcion !=5){
-          System.out.println("ingrese usuario 1: ");
-          usuario1 = leer.nextInt();
-        
-        
-        }
+        System.out.println("Escribir una de las opciones");
+        opcion = sn.nextInt();
 
-        switch (seleccionar_opcion) {
-          case 1:
-                  seleccionar_opcion = 1;
-                  resultado = numero1;
-                  System.out.println("sus pokemones son" + pikachu + Luxray + Jolteon);
-            break;
-        
-          default:
-            break;
-          }
-        }
-
-      }
-      System.out.println("Bienvenidos a la batalla pokemon!")
-      Pokemon pikachu = new Pokemon("pikachu", 4);
-      Pokemon Luxray = new Pokemon("Luxray", 4);
-      Pokemon Jolteon = new Pokemon("Jolteon ", 4);
-      Pokemon charmander = new Pokemon("Charmander", 2);
-      Pokemon Vulpix = new Pokemon("Vulpix", 2);
-      Pokemon squirtle = new Pokemon("Squirtle", 1);
-      Pokemon Totodile = new Pokemon("Totodile", 1);
-      Pokemon Pansage = new Pokemon("Pansage", 3);
-      Pokemon Pidgeot = new Pokemon("Pidgeot", 3);
-      Pokemon Snorlax = new Pokemon("Snorlax", 3);
+        System.out.println("Bienvenidos a la batalla pokemon!\n");
+        Pokemon pikachu = new Pokemon("pikachu", 4);
+        Pokemon Luxray = new Pokemon("Luxray", 4);
+        Pokemon Jolteon = new Pokemon("Jolteon ", 4);
+        Pokemon charmander = new Pokemon("Charmander", 2);
+        Pokemon Vulpix = new Pokemon("Vulpix", 2);
+        Pokemon squirtle = new Pokemon("Squirtle", 1);
+        Pokemon Totodile = new Pokemon("Totodile", 1);
+        Pokemon Pansage = new Pokemon("Pansage", 3);
+        Pokemon Pidgeot = new Pokemon("Pidgeot", 3);
 
         System.out.println("Los combatientes el dia de hoy son: ");
         System.out.println(pikachu.toString());
@@ -60,7 +36,6 @@ public class Batalla {
         System.out.println(Totodile.toString());
         System.out.println(Pansage.toString());
         System.out.println(Pidgeot.toString());
-        System.out.println(Snorlax.toString());        
 
         int ataquePikachu = pikachu.getAtaque();
         int ataqueLuxray = Luxray.getAtaque();
@@ -71,7 +46,6 @@ public class Batalla {
         int ataqueTotodile = Totodile.getAtaque();
         int ataquePansage = Pansage.getAtaque();
         int ataquePidgeot = Pidgeot.getAtaque();
-        int ataqueSnorlax = Snorlax.getAtaque();
 
         System.out.println("Ataca " + squirtle.nombre + " con un ataque de " + ataqueSquirtle);
         charmander.golpe(squirtle);
@@ -80,9 +54,11 @@ public class Batalla {
         System.out.println("Ataca " + charmander.nombre + " con un ataque de " + ataqueCharmander);
         squirtle.golpe(charmander);
         System.out.println(squirtle.toString());
+      }
 
     }
-  }
     
-  
+    
+    
+  }
 }
