@@ -1,14 +1,16 @@
+import java.util.Scanner;
+
 public class Batalla {
 
   public static void main(String[] args){
     System.out.print("Ingrese su nombre de usuario ");
-    Scanner sn = new Scanner(System.in);
-      String nombre = leer.nextLine();
+      Scanner sn = new Scanner(System.in);
+      String nombre = sn.nextLine();
       System.out.print("Hola " + nombre + "tus pokemones son");  
       boolean salir = false;
-      int opcion;
+      int opcion=0;
 
-      while(salir) {
+    while(salir) {
 
         System.out.println("1. Inscribir a un maestro pokemon");
         System.out.println("2. Administrar perfil del maestro pokemon");
@@ -17,6 +19,7 @@ public class Batalla {
 
         System.out.println("Escribir una de las opciones");
         opcion = sn.nextInt();
+        sn.nextLine();
 
         System.out.println("Bienvenidos a la batalla pokemon!\n");
         Pokemon pikachu = new Pokemon("pikachu", 4);
@@ -58,8 +61,7 @@ public class Batalla {
         squirtle.golpe(charmander);
         System.out.println(squirtle.toString());
       
-        }
-      }
-    } 
+    }
+    sn.close();
   }
 }
