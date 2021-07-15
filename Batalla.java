@@ -29,7 +29,7 @@
       System.out.println("La posicion para guardar ataques disponible es la " + MiTipo.indice()); //MiTipo.indice = 1 
       System.out.println("======================================================");
       System.out.println("Vamos a crear un ataque para el tipo " + MiTipo.nombre);
-      MiTipo.agregarAtaque("Burbuja", 16);
+      MiTipoN.agregarAtaque("Burbuja", 16);
       System.out.println("La posicion para guardar ataques disponible es la " + MiTipo.indice()); //MiTipo.indice() = 0
       System.out.println("Nombre del ataque de tipo " + MiTipo.nombre + ": " + MiTipo.ataques[1].nombre_golpe);
       System.out.println("Fuerza del ataque de tipo " + MiTipo.nombre + ": " + MiTipo.ataques[1].damage);
