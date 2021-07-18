@@ -1,11 +1,11 @@
 public class Tipo {
-    String nombre;
-    int defensa;
+    String nombre; // Este es el nombre del tipo de la defensa
+    int defensa;  // Esta variable defensa del pokemon
     Ataque[] ataques=new Ataque[4]; //son 4 ataques los que debe tener. No se crean en el constructor
     double precision; //precision es un porcentaje del ataque. Por ejemplo, ataque de 50 y una precision del 50% = ataque de 25
-    String debilidad;
+    String debilidad; // La debilidad del pokemon
 
-    public Tipo(String nombreTipo, int defensaTipo, double precisionTipo){
+    public Tipo(String nombreTipo, int defensaTipo, double precisionTipo){  // Constructor de la clase tipo 
         nombre = nombreTipo;
         defensa = defensaTipo;
         precision = precisionTipo;
@@ -22,7 +22,7 @@ public class Tipo {
                 break;
             }
         }
-        return posicionLibre;
+        return posicionLibre; // Osea que me va a devolver la posicion libre.
     }
 
     //metodo void no devuelve nada
