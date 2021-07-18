@@ -3,6 +3,7 @@ public class Tipo {
     int defensa;
     Ataque[] ataques=new Ataque[4]; //son 4 ataques los que debe tener. No se crean en el constructor
     double precision; //precision es un porcentaje del ataque. Por ejemplo, ataque de 50 y una precision del 50% = ataque de 25
+    String debilidad;
 
     public Tipo(String nombreTipo, int defensaTipo, double precisionTipo){
         nombre = nombreTipo;
@@ -32,7 +33,19 @@ public class Tipo {
         ataques[posicionLibre] = new Ataque(nombre, (int) (golpe * precision));
         System.out.println("Se guardo el ataque en el listado de ataques en la posicion " + posicionLibre);
     }
+//metodo que devuelva un ataque si se da un index (ejemplo 1 => ataques[1])
+    public Ataque getAtaque(int posicion){
+        return ataques[posicion];
+    }
 
+    //metodo que imprima todos los ataques
+    public void printAllAtaques(){
+        for(int j=0;j<ataques.length;j++){
+            System.out.println((j+1) + ". Ataque: " + ataques[j].nombre_golpe + ", poder del ataque: " + ataques[j].damage);
+        }
+    }
+
+
+    }
 
     
-}
